@@ -62,6 +62,10 @@ Already prepared:
 		
 
 8. Test through Postman the main workflow(with 1 exception at least)
+
+9. Delete mock files
+
+10. Push to Github
 	
 
 If issues:
