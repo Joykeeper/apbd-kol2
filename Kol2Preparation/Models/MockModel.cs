@@ -19,7 +19,6 @@ public class MockModel
     // public virtual ICollection<Prescription> Prescriptions { get; set; }
     
     //in case FK
-    // [Key]
     // public int ClientId { get; set; }
     // [ForeignKey(nameof(ClientId))]
     // public virtual Client Client { get; set; }
