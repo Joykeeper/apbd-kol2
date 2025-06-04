@@ -51,24 +51,25 @@ Github for reference: https://github.com/mpazio/apbd-2025-example-test-2
 4. Create and run migrations:
 	dotnet ef migrations --project [project name] add InitialCreate // in Rider: Tools -> EntityFramework -> Add Migration -> choose dbcontext, name and create
 	dotnet ef database --project [project name] update // in Rider -> .. -> Update Database
-	
+	4.1 Check if tables created in SSMS
 	
 # For each task (focus on one task at once)
 
 5. Create DTOs based on the task 
 6. Create Controllers based on the task (create exception handling)
 7. Add needed methods for the task to IDbService and implement them in DbService
-	Include throwing right Exception(create if needed)
-	Includes in LINQ not necessary if you project on Dtos.
-		
+	Include throwing right Exception
+	Includes in LINQ not needed if you project on Dtos.
+	Update db: act directly on object from db and saving the data.
+8 Test through Postman the main workflow(with 1 exception throw at least)
 
-8. Test through Postman the main workflow(with 1 exception throw at least)
 
 9. Delete mock files, also Exceptions folder(if not used), delete plan.txt
-	9.1 Remove unnecessary comments
+	9.1 Remove unnecessary comments over files
 
 10. Push to Github
-	
+
+11. Complete the assignment
 
 If issues:
 - cannot copy: run  taskkill /PID 5100 /F (or the process number which is holding)
