@@ -6,11 +6,12 @@ Already prepared:
 - Setting up the connection string in appsettings.json
 - Create IDbService interface and DbService.cs in Services folder
 
+Github for reference: https://github.com/mpazio/apbd-2025-example-test-2
+
 
 - GitHub:
 1. Clone https://github.com/Joykeeper/apbd-kol2.git
-2. Create your web app in rider
-3. Try commiting: 
+2. Try commiting: 
 	echo "kolokwium 2" > README.md
 	git add README.md
 	git commit -m "Updated README.md"
@@ -61,9 +62,10 @@ Already prepared:
 	Includes in LINQ not necessary if you project on Dtos.
 		
 
-8. Test through Postman the main workflow(with 1 exception at least)
+8. Test through Postman the main workflow(with 1 exception throw at least)
 
-9. Delete mock files
+9. Delete mock files, also Exceptions folder(if not used), delete plan.txt
+	9.1 Remove unnecessary comments
 
 10. Push to Github
 	

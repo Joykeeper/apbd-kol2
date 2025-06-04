@@ -7,11 +7,11 @@ namespace Kol2Preparation.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class PatientsController : ControllerBase
+public class MocksController : ControllerBase
 {
     private  readonly IDbService _dbService;
 
-    public PatientsController(IDbService db)
+    public MocksController(IDbService db)
     {
         _dbService = db;
     }
@@ -25,7 +25,7 @@ public class PatientsController : ControllerBase
     //         var patient = await _dbService.GetPatientData(id);
     //         return Ok(patient);
     //     }
-    //     catch (PatientNotFoundException e)
+    //     catch (NotFoundException e)
     //     {
     //         return NotFound(e.Message);
     //     }
@@ -36,15 +36,19 @@ public class PatientsController : ControllerBase
     //     try
     //     {
     //         await _dbService.AddPrescription(prescription);
-    //         return Ok();
+    //         return Created();
     //     }
-    //     catch (PatientNotFoundException exception)
+    //     catch (NotFoundException e)
     //     {
-    //         return NotFound(exception.Message);
+    //      return NotFound(e.Message);
     //     }
-    //     catch (DueDateBeforeDateException exception)
+    //     catch (ConflictException e)
     //     {
-    //         return BadRequest(exception.Message);
+    //      return Conflict(e.Message);
+    //     }
+    //     catch (BadRequestException e)
+    //     {
+    //      return BadRequest(e.Message);
     //     }
     // }
 }

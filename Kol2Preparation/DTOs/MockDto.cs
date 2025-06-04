@@ -1,5 +1,7 @@
 ﻿namespace Kol2Preparation.DTOs;
 
+
+// Create DTO files based on number of endpoints
 public class MockDto
 {
     public int Id { get; set; }
